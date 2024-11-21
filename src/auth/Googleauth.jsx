@@ -10,11 +10,12 @@ const Googleauth = () => {
     try {
       const provider = new GoogleAuthProvider();
       const result = await signInWithPopup(auth, provider);
+      alert("fghjklvghjgh")
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
       console.log('Access Token:', token);
       console.log('User Info:', result.user); // Display user info
-      setUser(result.user); // Save user info to state
+    //   setUser(result.user); // Save user info to state
     } catch (err) {
       console.error('Sign-in Error:', err.message);
     }
