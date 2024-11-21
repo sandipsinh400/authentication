@@ -18,6 +18,7 @@ function App() {
     .catch((err)=>{
         console.log(err);
     })
+    alert ("sign in succesfully")
   }
   return (
     <>
@@ -61,7 +62,7 @@ function App() {
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="btn btn-primary w-100">login</button>
+        <button type="submit" className="btn btn-primary w-100">Sing up</button>
       </form>
     </div>
       <Signin/>
